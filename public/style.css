@@ -9,7 +9,7 @@ html {
 button {
   height: 50px;
   width: 200px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #949585;
 }
 
@@ -18,6 +18,6 @@ button {
   text-align: center;
 }
 
-.purchaseWrapper {
+.hitsContainer {
   margin: 10px;
 }

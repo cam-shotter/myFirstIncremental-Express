@@ -4,20 +4,30 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	</head>
   <body>
-    <h1 class="title">Juggle Master</h1>
+    <h1 class="title">Balloon Empire</h1>
     <div>
-      <div class="purchaseWrapper">
-        <button onclick="ballJuggle(1)">Juggle Ball</button>
+      <div class="hitsContainer">
+        <button onclick="buyBalloon(1)">Buy Balloon</button>
         <p>
-          Balls: <span id="balls">0</span>
+          Balloons: <span id="balloons">0</span>
         </p>
       </div>
-      <div class="purchaseWrapper">
-        <button onclick="buyCursor()">Hire Clown</button>
+
+      <div class="hitsContainer">
+        <button onclick="buyClown()">Clown</button>
         <p>
           Clowns: <span id="clowns">0</span>
           <br />
-          Clown Cost: <span id="cursorCost">10</span>
+          Clown Cost: <span id="clownCost">10</span>
+        </p>
+      </div>
+
+      <div class="hitsContainer">
+        <button onclick="buyStreetPerformer()">Street Performer</button>
+        <p>
+          Street Performers: <span id="streetPerformers">0</span>
+          <br />
+          Street Performer Cost: <span id="streetPerformerCost">100</span>
         </p>
       </div>
     </div>
