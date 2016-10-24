@@ -1,17 +1,26 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	</head>
   <body>
-    <button onclick="ballJuggle(1)">Juggle Ball</button>
-    <br />
-    Balls: <span id="balls">0</span>
-    <br />
-    <button onclick="buyCursor()">Hire Clown</button>
-    <br />
-    Clowns: <span id="clowns">0</span>
-    <br />
-    Clown Cost: <span id="cursorCost">10</span>
+    <h1 class="title">Juggle Master</h1>
+    <div>
+      <div class="purchaseWrapper">
+        <button onclick="ballJuggle(1)">Juggle Ball</button>
+        <p>
+          Balls: <span id="balls">0</span>
+        </p>
+      </div>
+      <div class="purchaseWrapper">
+        <button onclick="buyCursor()">Hire Clown</button>
+        <p>
+          Clowns: <span id="clowns">0</span>
+          <br />
+          Clown Cost: <span id="cursorCost">10</span>
+        </p>
+      </div>
+    </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
