@@ -1,16 +1,16 @@
 html {
   font-family: 'Lato', sans-serif;
   margin: 20px;
-  /*color: #949585;*/
+  color: #C9DCB3;
   font-size: 18px;
-  background-color: #D4CDC3;
+  background-color: #5F6062;
 }
 
 button {
   height: 50px;
   width: 200px;
   font-size: 1.2rem;
-  background-color: #949585;
+  background-color: #C6CA53;
 }
 
 .title {
@@ -20,4 +20,8 @@ button {
 
 .hitsContainer {
   margin: 10px;
+}
+
+.balloonNumber {
+  padding: 10px;
 }

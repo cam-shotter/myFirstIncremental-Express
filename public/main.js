@@ -33,9 +33,23 @@ function buyStreetPerformer(){
     document.getElementById('streetPerformerCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
+var carnys = 0;
+
+function buyCarny(){
+    var carnyCost = Math.floor(800 * Math.pow(1.12,carnys));     //works out the cost of this cursor
+    if(balloons >= carnyCost){                                   //checks that the player can afford the cursor
+        carnys = carnys + 1;                                   //increases number of carnys
+    	balloons = balloons - carnyCost;                          //removes the balloons spent
+        document.getElementById('carnys').innerHTML = carnys;  //updates the number of streetPerformers for the user
+        document.getElementById('balloons').innerHTML = balloons;  //updates the number of balloons for the user
+    };
+    var nextCost = Math.floor(800 * Math.pow(1.12,carnys));       //works out the cost of the next cursor
+    document.getElementById('carnyCost').innerHTML = nextCost;  //updates the cursor cost for the user
+};
+
 
 window.setInterval(function(){
 
-	buyBalloon(clowns + (5 * streetPerformers));
+	buyBalloon(clowns + (5 * streetPerformers) + (10 * carnys));
 
 }, 1000);
