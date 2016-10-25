@@ -53,3 +53,31 @@ window.setInterval(function(){
 	buyBalloon(clowns + (5 * streetPerformers) + (10 * carnys));
 
 }, 1000);
+
+function save() {
+  var save = {
+    balloons: balloons,
+    clowns: clowns,
+    streetPerformers: streetPerformers,
+    carnys: carnys,
+    // prestige: prestige
+  }
+
+  localStorage.setItem("save",JSON.stringify(save));
+  console.log("saved game:", localStorage);
+}
+
+function load() {
+  var savedgame = JSON.parse(localStorage.getItem("save"));
+  console.log("loaded game:", savedgame);
+
+  if (typeof savedgame.balloons !== "undefined") balloons = savedgame.balloons;
+
+  if (typeof savedgame.clowns !== "undefined") clowns = savedgame.clowns;
+
+  if (typeof savedgame.streetPerformers !== "undefined") streetPerformers = savedgame.streetPerformers;
+
+  if (typeof savedgame.carnys !== "undefined") carnys = savedgame.carnys;
+}
+
+window.onload = load()
