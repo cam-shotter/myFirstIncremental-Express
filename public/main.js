@@ -54,6 +54,10 @@ window.setInterval(function(){
 
 }, 1000);
 
+window.setInterval(function() {
+  save()
+}, 30000)
+
 function save() {
   var save = {
     balloons: balloons,
@@ -81,3 +85,7 @@ function load() {
 }
 
 window.onload = load()
+
+function deleteGame() {
+  localStorage.removeItem("save")
+}
